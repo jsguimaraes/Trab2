@@ -37,6 +37,7 @@ header img{
 
 nav{
     position: sticky;
+    width: 100%;
     top: 0;
     display: flex;
     flex-direction: column;
@@ -57,6 +58,7 @@ nav{
 }
 
 .menu li a{
+    width: 70%;
     padding: 0.5rem;
     color: #570505;
     border: 1px solid #570505;
@@ -164,8 +166,8 @@ footer div{
 #box-cross, #box-danca, #box-lutas, #box-musculacao, #box-pilates, #box-spinning{
     text-align: center;
     border: 1px solid black;
-    width: 400px;
-    height: 500px;
+    width: 60%;
+    height: 70%;
     margin: 20px;
     display: inline-block;
     
@@ -188,6 +190,7 @@ footer div{
 }
 
 .modo{
+    /* fazer clamp */
     width: 350px;
     height: 350px;
     border: 2px solid #570505;
