@@ -181,8 +181,10 @@ footer div{
     box-sizing: border-box;
     flex-direction: row;
 
-    
+}
 
+#modalidades a{
+    color: black;
 }
 
 .modo{
@@ -198,6 +200,7 @@ footer div{
     list-style: none;
     border: 1px solid #570505;
     margin-left: 40px;
+    
 }
 .pilates li, .cross li, .danca li, .lutas li, .musculacao li, .spinning li{
     background-color: #57050593;
