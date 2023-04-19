@@ -5,10 +5,6 @@
     font-family: "roboto";
 }
 
-body{
-    width: 100vw;
-}
-
 header{
     width: 100%;
     display: flex;
@@ -16,8 +12,13 @@ header{
     align-items: center;
     background: #000000;
     border: 1px solid black;
-    margin-bottom: 0.1rem;
-   
+    margin-bottom: 0.1rem; 
+}
+
+@media screen and (max-width: 768px){
+    header{
+        justify-content: center;
+    }
 }
 
 .logo{
@@ -28,16 +29,20 @@ header{
     margin-left: 30px;
 }
 
-header img{
+.banner{
     width: 80%;
     text-align: center;
     height: 180px;
 }
 
+@media screen and (max-width: 768px){
+    .banner{
+        display: none;
+    }
+}
 
 nav{
     position: sticky;
-    width: 100%;
     top: 0;
     display: flex;
     flex-direction: column;
@@ -58,7 +63,6 @@ nav{
 }
 
 .menu li a{
-    width: 70%;
     padding: 0.5rem;
     color: #570505;
     border: 1px solid #570505;
@@ -125,17 +129,25 @@ h3{
     margin: 20px;
 }
 
+@media screen and (max-width: 768px){
+    .foto{
+        width: 85%;
+    }
+}
+
 footer{
     width: 100%;
-    height: 80px;
+    height: auto;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     border: 1px solid black;
     background-color: #000000;
     align-items: center;
     bottom: 0;
+    gap: 10px;
+    padding: 5%;
 }
-
 
 footer p, a{
     font-size: 15px;
@@ -145,6 +157,7 @@ footer p, a{
 
 footer div{
     display: flex;
+    flex-basis: 20%;
     align-items: center;
     gap: 5px;
 }
@@ -153,6 +166,13 @@ footer div{
     width: 30px;
     height: 30px;
 }
+
+@media screen and (max-width:768px){
+    #local{
+        display: none;
+    }
+}
+
 /* final index */
 
 /* Modalidades */
@@ -166,16 +186,22 @@ footer div{
 #box-cross, #box-danca, #box-lutas, #box-musculacao, #box-pilates, #box-spinning{
     text-align: center;
     border: 1px solid black;
-    width: 60%;
-    height: 70%;
+    width: 400px;
+    height: 500px;
     margin: 20px;
     display: inline-block;
     
 
 }
 
+@media screen and (max-width: 768px) {
+    #box-cross, #box-danca, #box-lutas, #box-musculacao, #box-pilates, #box-spinning{
+        width: 80%;
+    }
+}
+
 #modalidades{
-    width: 65%;
+    width: 100%;
     text-align: center;
     align-items: center;
     border: 1px solid #570505;
@@ -190,7 +216,6 @@ footer div{
 }
 
 .modo{
-    /* fazer clamp */
     width: 350px;
     height: 350px;
     border: 2px solid #570505;
@@ -198,11 +223,16 @@ footer div{
     margin: 15px; 
 }
 
+@media screen and (max-width: 768px) {
+    .modo{
+        width: 90%;
+    }
+}
+
 .pilates, .cross, .danca, .lutas, .musculacao, .spinning{
     width: 80%;
     list-style: none;
-    border: 1px solid #570505;
-    margin-left: 40px;
+    margin: auto;
     
 }
 .pilates li, .cross li, .danca li, .lutas li, .musculacao li, .spinning li{
@@ -234,6 +264,13 @@ fieldset{
     align-items: center;
 }
 
+label{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
 #cadastro h1{
     text-align: center;
     text-shadow: 2px 1px #0000006b;
@@ -248,7 +285,8 @@ fieldset{
     border: 0.5px solid black;
     border-radius: 3px;
     margin: auto;
-    width: 500px;
+    margin-bottom: 15px;
+    width: 100%;
     margin-top: 10px;
 }
 
